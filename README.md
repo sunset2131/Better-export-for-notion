@@ -1,6 +1,6 @@
 # Better-import-for-notion
 ## 作用
-对文件重命名，将图片和md文件放在单独文件夹,并添加YAML头部，以便导入博客
+对Notion导出的内容进行优化，对文件重命名，将图片和md文件放在单独文件夹，并添加YAML头部，以便导入博客
 ## usage
 ```
 D:\All\BlogUsePy>python Notion2Better.py -h
@@ -39,4 +39,4 @@ draft: false
 ---
 ```
 ## 二次开发
-文件内容很简单，直接修改即可
+工具内容很简单，直接修改即可
