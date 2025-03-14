@@ -4,9 +4,10 @@
 ## usage
 ```
 D:\All\BlogUsePy>python Notion2Better.py -h
-usage: Notion2Fu.py [-h] --folder_path FOLDER_PATH [--prefix PREFIX] --tags TAGS --category CATEGORY
+usage: Notion2Better.py [-h] --folder_path FOLDER_PATH [--prefix PREFIX] --tags TAGS --category CATEGORY
+                        [--image {true,false}]
 
-Process Markdown files for HackTheBox blog.
+Optimize exported Notion resources
 
 options:
   -h, --help            show this help message and exit
@@ -15,10 +16,11 @@ options:
   --prefix PREFIX       (Optional) Prefix to be added to the title.
   --tags TAGS           Tags for the markdown files.
   --category CATEGORY   Category for the markdown files.
+  --image {true,false}  Whether to add the first image in the folder to the YAML header (true/false).
 ```
 ## example
 ```
-python Notion2Fu.py --prefix Vulnhub --tags [Vulnhub] --category 靶机 --folder_path "D:\System\Downloads\new-blog-test\vulnhub"
+python Notion2Fu.py --prefix Vulnhub --tags [Vulnhub] --image true --category 靶机 --folder_path "D:\System\Downloads\new-blog-test\vulnhub"
 ```
 
 ## 改善对Notion导出后的处理
@@ -33,6 +35,7 @@ python Notion2Fu.py --prefix Vulnhub --tags [Vulnhub] --category 靶机 --folder
 ---
 title: Vulnhub-billu： b0x
 published: 2025-03-09
+image: "./image.png"
 tags: [Vulnhub]
 category: 靶机
 draft: false
